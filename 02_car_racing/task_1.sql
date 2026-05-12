@@ -13,4 +13,4 @@ SELECT c.name AS car_name, c.class AS car_class, CAST(ROUND(c.avg_position, 4) A
 FROM car_avg_position c
 JOIN min_avg_by_class m ON m.class = c.class
 WHERE m.min_avg_position = c.avg_position
-ORDER BY m.min_avg_position
+ORDER BY c.avg_position
